@@ -16,7 +16,3 @@ class BidFile(db.Model):
 	updated_at = db.Column(db.DateTime(timezone=True), default=db.func.now(), onupdate=db.func.now())
 	stored_at = db.Column(db.String)
 
-	def __repr__(self):
-		return str(self.id)
-
-
